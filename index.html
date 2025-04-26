@@ -1,0 +1,1407 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <title>Document</title>
+    <link rel="stylesheet" href="output.css" />
+  </head>
+  <body>
+    <div
+      class="bg-[#005CFF] font-bold text-white text-[14px] text-center px-[22px] py-1"
+    >
+      Ganhe R$10,00 de desconto no seu primeiro pedido. Utilize o cupom
+      DESCONTO10
+    </div>
+    <header class="flex flex-col">
+      <div class="lg:flex lg:flex-row lg:mx-[317px]">
+        <div class="flex flex-row justify-between items-center p-6">
+          <img
+            src="/src/images/menu_hamburger.svg"
+            alt="Menu"
+            class="lg:hidden"
+          />
+          <img src="/src/images/logo-avanti.svg" alt="Logo Avanti" />
+          <img
+            src="/src/images/carrinho.svg"
+            alt="Carrinho"
+            class="lg:hidden"
+          />
+        </div>
+        <div class="flex flex-col m-4 lg:w-[594px]">
+          <div
+            class="flex justify-between p-3 border rounded-[10px] border-[#DDDDDD]"
+          >
+            <input
+              type="text"
+              class="search-input flex-grow outline-none"
+              placeholder="Digite aqui o que você procura"
+            />
+            <button class="search-button">
+              <img src="/src/images/lupa.svg" alt="Busca" class="search-icon" />
+            </button>
+          </div>
+
+          <p id="search-result" class="text-gray-700 font-medium mt-2"></p>
+        </div>
+
+        <img
+          src="/src/images/carrinho-cliente.svg"
+          alt="Carrinho"
+          class="hidden lg:block w-auto h-auto ml-[200px]"
+        />
+      </div>
+
+      <nav
+        class="bg-white border-b border-gray-200 p-4 font-sans hidden lg:flex lg:mx-[317px]"
+      >
+        <ul class="flex items-center space-x-6">
+          <li class="relative group">
+            <a
+              href="#"
+              class="font-bold text-black hover:text-[#005CFF] flex items-center gap-2"
+            >
+              <svg
+                class="w-5 h-5"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                ></path>
+              </svg>
+              Todas as Categorias
+            </a>
+
+            <div
+              class="absolute left-0 top-full hidden group-hover:flex bg-white shadow-2xl w-[1261px] h-[329px] z-30"
+            >
+              <div class="w-[234px] bg-[#F5F5F5]">
+                <ul class="space-y-1">
+                  <li class="flex group/dep relative">
+                    <button
+                      class="w-full flex items-center justify-between text-left mt-4 px-3 rounded text-black hover:text-[#005CFF] font-medium transition"
+                    >
+                      <span>Departamento</span>
+                      <span
+                        class="text-black group-hover/dep:text-[#005CFF] transition font-medium text-[24px]"
+                        >›</span
+                      >
+                    </button>
+                    <div
+                      class="absolute inset-y-0 left-full top-0 w-[1000px] h-[329px] hidden group-hover/dep:flex justify-between pl-11 pr-1"
+                    >
+                      <div class="flex w-full">
+                        <div class="flex-1 mt-4">
+                          <h4 class="text-blue-600 font-bold mb-2">
+                            Categoria
+                          </h4>
+                          <ul class="text-gray-600 space-y-3">
+                            <li class="hover:underline">Categoria</li>
+                            <li class="hover:underline">Categoria</li>
+                            <li class="hover:underline">Categoria</li>
+                            <li class="hover:underline">Categoria</li>
+                            <li class="hover:underline">Categoria</li>
+                            <li class="hover:underline">Categoria</li>
+                            <li class="hover:underline">Categoria</li>
+                          </ul>
+                        </div>
+                        <div class="flex-1 mt-4">
+                          <h4 class="text-blue-600 font-bold mb-2">
+                            Categoria
+                          </h4>
+                          <ul class="text-gray-600 space-y-3">
+                            <li class="hover:underline">Categoria</li>
+                            <li class="hover:underline">Categoria</li>
+                            <li class="hover:underline">Categoria</li>
+                            <li class="hover:underline">Categoria</li>
+                            <li class="hover:underline">Categoria</li>
+                            <li class="hover:underline">Categoria</li>
+                            <li class="hover:underline">Categoria</li>
+                          </ul>
+                        </div>
+                        <div class="flex-1 mt-4">
+                          <h4 class="text-blue-600 font-bold mb-2">
+                            Categoria
+                          </h4>
+                          <ul class="text-gray-600 space-y-3">
+                            <li class="hover:underline">Categoria</li>
+                            <li class="hover:underline">Categoria</li>
+                            <li class="hover:underline">Categoria</li>
+                            <li class="hover:underline">Categoria</li>
+                            <li class="hover:underline">Categoria</li>
+                            <li class="hover:underline">Categoria</li>
+                            <li class="hover:underline">Categoria</li>
+                          </ul>
+                        </div>
+
+                        <div
+                          class="flex-1 relative mt-4 ml-0 w-[236px] h-[298px]"
+                        >
+                          <img
+                            src="src/images/caneca-tabua.png"
+                            alt="Promo"
+                            class="w-full h-full object-cover rounded-[10px]"
+                          />
+
+                          <div
+                            class="absolute inset-0 bg-gray-900/40 rounded-[10px] z-10"
+                          ></div>
+
+                          <div
+                            class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-center z-20 px-3"
+                          >
+                            <h3
+                              class="text-[20px] font-normal leading-[1.2] text-left"
+                            >
+                              Confira os<br />
+                              Produtos<br />
+                              <span class="font-bold"
+                                >Que acabaram<br />De chegar</span
+                              >
+                            </h3>
+                            <button
+                              class="w-[116px] h-[38px] mt-6 text-white font-bold py-1 px-4 rounded-[10px] border border-white text-[12px] uppercase bg-transparent hover:bg-white hover:text-black transition"
+                            >
+                              Ver Todos
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li class="flex group/dep relative">
+                    <button
+                      class="w-full flex items-center justify-between text-left mt-0 px-3 rounded text-black hover:text-[#005CFF] font-medium transition"
+                    >
+                      <span>Departamento</span>
+                      <span
+                        class="text-black group-hover/dep:text-[#005CFF] transition font-medium text-[24px]"
+                        >›</span
+                      >
+                    </button>
+                    <div
+                      class="absolute inset-y-0 left-full w-[1000px] h-[329px] hidden group-hover/dep:flex justify-between pl-11 pr-1"
+                    >
+                      <div class="flex w-full -mt-[40px]">
+                        <div class="flex-1">
+                          <h4 class="text-blue-600 font-bold mb-2">
+                            Categoria
+                          </h4>
+                          <ul class="text-gray-600 space-y-3">
+                            <li class="hover:underline">Categoria</li>
+                            <li class="hover:underline">Categoria</li>
+                            <li class="hover:underline">Categoria</li>
+                            <li class="hover:underline">Categoria</li>
+                            <li class="hover:underline">Categoria</li>
+                            <li class="hover:underline">Categoria</li>
+                            <li class="hover:underline">Categoria</li>
+                          </ul>
+                        </div>
+                        <div class="flex-1">
+                          <h4 class="text-blue-600 font-bold mb-2">
+                            Categoria
+                          </h4>
+                          <ul class="text-gray-600 space-y-3">
+                            <li class="hover:underline">Categoria</li>
+                            <li class="hover:underline">Categoria</li>
+                            <li class="hover:underline">Categoria</li>
+                            <li class="hover:underline">Categoria</li>
+                            <li class="hover:underline">Categoria</li>
+                            <li class="hover:underline">Categoria</li>
+                            <li class="hover:underline">Categoria</li>
+                          </ul>
+                        </div>
+                        <div class="flex-1">
+                          <h4 class="text-blue-600 font-bold mb-2">
+                            Categoria
+                          </h4>
+                          <ul class="text-gray-600 space-y-3">
+                            <li class="hover:underline">Categoria</li>
+                            <li class="hover:underline">Categoria</li>
+                            <li class="hover:underline">Categoria</li>
+                            <li class="hover:underline">Categoria</li>
+                            <li class="hover:underline">Categoria</li>
+                            <li class="hover:underline">Categoria</li>
+                            <li class="hover:underline">Categoria</li>
+                          </ul>
+                        </div>
+
+                        <div class="flex-1 relative ml-0 w-[236px] h-[298px]">
+                          <img
+                            src="src/images/caneca-tabua.png"
+                            alt="Promo"
+                            class="w-full h-full object-cover rounded-[10px]"
+                          />
+
+                          <div
+                            class="absolute inset-0 bg-gray-900/40 rounded-[10px] z-10"
+                          ></div>
+
+                          <div
+                            class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-center z-20 px-3"
+                          >
+                            <h3
+                              class="text-[20px] font-normal leading-[1.2] text-left"
+                            >
+                              Confira os<br />
+                              Produtos<br />
+                              <span class="font-bold"
+                                >Que acabaram<br />De chegar</span
+                              >
+                            </h3>
+                            <button
+                              class="w-[116px] h-[38px] mt-6 text-white font-bold py-1 px-4 rounded-[10px] border border-white text-[12px] uppercase bg-transparent hover:bg-white hover:text-black transition"
+                            >
+                              Ver Todos
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li class="flex group/dep relative">
+                    <button
+                      class="w-full flex items-center justify-between text-left mt-0 px-3 rounded text-black hover:text-[#005CFF] font-medium transition"
+                    >
+                      <span>Departamento</span>
+                      <span
+                        class="text-black group-hover/dep:text-[#005CFF] transition font-medium text-[24px]"
+                        >›</span
+                      >
+                    </button>
+                    <div
+                      class="absolute inset-y-0 left-full top-0 w-[1000px] h-[329px] hidden group-hover/dep:flex justify-between pl-11 pr-1"
+                    >
+                      <div class="flex w-full -mt-[96px]">
+                        <div class="flex-1 mt-4">
+                          <h4 class="text-blue-600 font-bold mb-2">
+                            Categoria
+                          </h4>
+                          <ul class="text-gray-600 space-y-3">
+                            <li class="hover:underline">Categoria</li>
+                            <li class="hover:underline">Categoria</li>
+                            <li class="hover:underline">Categoria</li>
+                            <li class="hover:underline">Categoria</li>
+                            <li class="hover:underline">Categoria</li>
+                            <li class="hover:underline">Categoria</li>
+                            <li class="hover:underline">Categoria</li>
+                          </ul>
+                        </div>
+                        <div class="flex-1 mt-4">
+                          <h4 class="text-blue-600 font-bold mb-2">
+                            Categoria
+                          </h4>
+                          <ul class="text-gray-600 space-y-3">
+                            <li class="hover:underline">Categoria</li>
+                            <li class="hover:underline">Categoria</li>
+                            <li class="hover:underline">Categoria</li>
+                            <li class="hover:underline">Categoria</li>
+                            <li class="hover:underline">Categoria</li>
+                            <li class="hover:underline">Categoria</li>
+                            <li class="hover:underline">Categoria</li>
+                          </ul>
+                        </div>
+                        <div class="flex-1 mt-4">
+                          <h4 class="text-blue-600 font-bold mb-2">
+                            Categoria
+                          </h4>
+                          <ul class="text-gray-600 space-y-3">
+                            <li class="hover:underline">Categoria</li>
+                            <li class="hover:underline">Categoria</li>
+                            <li class="hover:underline">Categoria</li>
+                            <li class="hover:underline">Categoria</li>
+                            <li class="hover:underline">Categoria</li>
+                            <li class="hover:underline">Categoria</li>
+                            <li class="hover:underline">Categoria</li>
+                          </ul>
+                        </div>
+
+                        <div
+                          class="flex-1 relative mt-4 ml-0 w-[236px] h-[298px]"
+                        >
+                          <img
+                            src="src/images/caneca-tabua.png"
+                            alt="Promo"
+                            class="w-full h-full object-cover rounded-[10px]"
+                          />
+
+                          <div
+                            class="absolute inset-0 bg-gray-900/40 rounded-[10px] z-10"
+                          ></div>
+
+                          <div
+                            class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-center z-20 px-3"
+                          >
+                            <h3
+                              class="text-[20px] font-normal leading-[1.2] text-left"
+                            >
+                              Confira os<br />
+                              Produtos<br />
+                              <span class="font-bold"
+                                >Que acabaram<br />De chegar</span
+                              >
+                            </h3>
+                            <button
+                              class="w-[116px] h-[38px] mt-6 text-white font-bold py-1 px-4 rounded-[10px] border border-white text-[12px] uppercase bg-transparent hover:bg-white hover:text-black transition"
+                            >
+                              Ver Todos
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li class="flex group/dep relative">
+                    <button
+                      class="w-full flex items-center justify-between text-left mt-0 px-3 rounded text-black hover:text-[#005CFF] font-medium transition"
+                    >
+                      <span>Departamento</span>
+                      <span
+                        class="text-black group-hover/dep:text-[#005CFF] transition font-medium text-[24px]"
+                        >›</span
+                      >
+                    </button>
+                    <div
+                      class="absolute inset-y-0 left-full top-0 w-[1000px] h-[329px] hidden group-hover/dep:flex justify-between pl-11 pr-1"
+                    >
+                      <div class="flex w-full -mt-[135px]">
+                        <div class="flex-1 mt-4">
+                          <h4 class="text-blue-600 font-bold mb-2">
+                            Categoria
+                          </h4>
+                          <ul class="text-gray-600 space-y-3">
+                            <li class="hover:underline">Categoria</li>
+                            <li class="hover:underline">Categoria</li>
+                            <li class="hover:underline">Categoria</li>
+                            <li class="hover:underline">Categoria</li>
+                            <li class="hover:underline">Categoria</li>
+                            <li class="hover:underline">Categoria</li>
+                            <li class="hover:underline">Categoria</li>
+                          </ul>
+                        </div>
+                        <div class="flex-1 mt-4">
+                          <h4 class="text-blue-600 font-bold mb-2">
+                            Categoria
+                          </h4>
+                          <ul class="text-gray-600 space-y-3">
+                            <li class="hover:underline">Categoria</li>
+                            <li class="hover:underline">Categoria</li>
+                            <li class="hover:underline">Categoria</li>
+                            <li class="hover:underline">Categoria</li>
+                            <li class="hover:underline">Categoria</li>
+                            <li class="hover:underline">Categoria</li>
+                            <li class="hover:underline">Categoria</li>
+                          </ul>
+                        </div>
+                        <div class="flex-1 mt-4">
+                          <h4 class="text-blue-600 font-bold mb-2">
+                            Categoria
+                          </h4>
+                          <ul class="text-gray-600 space-y-3">
+                            <li class="hover:underline">Categoria</li>
+                            <li class="hover:underline">Categoria</li>
+                            <li class="hover:underline">Categoria</li>
+                            <li class="hover:underline">Categoria</li>
+                            <li class="hover:underline">Categoria</li>
+                            <li class="hover:underline">Categoria</li>
+                            <li class="hover:underline">Categoria</li>
+                          </ul>
+                        </div>
+
+                        <div
+                          class="flex-1 relative mt-4 ml-0 w-[236px] h-[298px]"
+                        >
+                          <img
+                            src="src/images/caneca-tabua.png"
+                            alt="Promo"
+                            class="w-full h-full object-cover rounded-[10px]"
+                          />
+
+                          <div
+                            class="absolute inset-0 bg-gray-900/40 rounded-[10px] z-10"
+                          ></div>
+
+                          <div
+                            class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-center z-20 px-3"
+                          >
+                            <h3
+                              class="text-[20px] font-normal leading-[1.2] text-left"
+                            >
+                              Confira os<br />
+                              Produtos<br />
+                              <span class="font-bold"
+                                >Que acabaram<br />De chegar</span
+                              >
+                            </h3>
+                            <button
+                              class="w-[116px] h-[38px] mt-6 text-white font-bold py-1 px-4 rounded-[10px] border border-white text-[12px] uppercase bg-transparent hover:bg-white hover:text-black transition"
+                            >
+                              Ver Todos
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li class="flex group/dep relative">
+                    <button
+                      class="w-full flex items-center justify-between text-left mt-0 px-3 rounded text-black hover:text-[#005CFF] font-medium transition"
+                    >
+                      <span>Departamento</span>
+                      <span
+                        class="text-black group-hover/dep:text-[#005CFF] transition font-medium text-[24px]"
+                        >›</span
+                      >
+                    </button>
+                    <div
+                      class="absolute inset-y-0 left-full top-0 w-[1000px] h-[329px] hidden group-hover/dep:flex justify-between pl-11 pr-1"
+                    >
+                      <div class="flex w-full -mt-[175px]">
+                        <div class="flex-1 mt-4">
+                          <h4 class="text-blue-600 font-bold mb-2">
+                            Categoria
+                          </h4>
+                          <ul class="text-gray-600 space-y-3">
+                            <li class="hover:underline">Categoria</li>
+                            <li class="hover:underline">Categoria</li>
+                            <li class="hover:underline">Categoria</li>
+                            <li class="hover:underline">Categoria</li>
+                            <li class="hover:underline">Categoria</li>
+                            <li class="hover:underline">Categoria</li>
+                            <li class="hover:underline">Categoria</li>
+                          </ul>
+                        </div>
+                        <div class="flex-1 mt-4">
+                          <h4 class="text-blue-600 font-bold mb-2">
+                            Categoria
+                          </h4>
+                          <ul class="text-gray-600 space-y-3">
+                            <li class="hover:underline">Categoria</li>
+                            <li class="hover:underline">Categoria</li>
+                            <li class="hover:underline">Categoria</li>
+                            <li class="hover:underline">Categoria</li>
+                            <li class="hover:underline">Categoria</li>
+                            <li class="hover:underline">Categoria</li>
+                            <li class="hover:underline">Categoria</li>
+                          </ul>
+                        </div>
+                        <div class="flex-1 mt-4">
+                          <h4 class="text-blue-600 font-bold mb-2">
+                            Categoria
+                          </h4>
+                          <ul class="text-gray-600 space-y-3">
+                            <li class="hover:underline">Categoria</li>
+                            <li class="hover:underline">Categoria</li>
+                            <li class="hover:underline">Categoria</li>
+                            <li class="hover:underline">Categoria</li>
+                            <li class="hover:underline">Categoria</li>
+                            <li class="hover:underline">Categoria</li>
+                            <li class="hover:underline">Categoria</li>
+                          </ul>
+                        </div>
+
+                        <div
+                          class="flex-1 relative mt-4 ml-0 w-[236px] h-[298px]"
+                        >
+                          <img
+                            src="src/images/caneca-tabua.png"
+                            alt="Promo"
+                            class="w-full h-full object-cover rounded-[10px]"
+                          />
+
+                          <div
+                            class="absolute inset-0 bg-gray-900/40 rounded-[10px] z-10"
+                          ></div>
+
+                          <div
+                            class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-center z-20 px-3"
+                          >
+                            <h3
+                              class="text-[20px] font-normal leading-[1.2] text-left"
+                            >
+                              Confira os<br />
+                              Produtos<br />
+                              <span class="font-bold"
+                                >Que acabaram<br />De chegar</span
+                              >
+                            </h3>
+                            <button
+                              class="w-[116px] h-[38px] mt-6 text-white font-bold py-1 px-4 rounded-[10px] border border-white text-[12px] uppercase bg-transparent hover:bg-white hover:text-black transition"
+                            >
+                              Ver Todos
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li class="flex group/dep relative">
+                    <button
+                      class="w-full flex items-center justify-between text-left mt-0 px-3 rounded text-black hover:text-[#005CFF] font-medium transition"
+                    >
+                      <span>Departamento</span>
+                      <span
+                        class="text-black group-hover/dep:text-[#005CFF] transition font-medium text-[24px]"
+                        >›</span
+                      >
+                    </button>
+                    <div
+                      class="absolute inset-y-0 left-full top-0 w-[1000px] h-[329px] hidden group-hover/dep:flex justify-between pl-11 pr-1"
+                    >
+                      <div class="flex w-full -mt-[215px]">
+                        <div class="flex-1 mt-4">
+                          <h4 class="text-blue-600 font-bold mb-2">
+                            Categoria
+                          </h4>
+                          <ul class="text-gray-600 space-y-3">
+                            <li class="hover:underline">Categoria</li>
+                            <li class="hover:underline">Categoria</li>
+                            <li class="hover:underline">Categoria</li>
+                            <li class="hover:underline">Categoria</li>
+                            <li class="hover:underline">Categoria</li>
+                            <li class="hover:underline">Categoria</li>
+                            <li class="hover:underline">Categoria</li>
+                          </ul>
+                        </div>
+                        <div class="flex-1 mt-4">
+                          <h4 class="text-blue-600 font-bold mb-2">
+                            Categoria
+                          </h4>
+                          <ul class="text-gray-600 space-y-3">
+                            <li class="hover:underline">Categoria</li>
+                            <li class="hover:underline">Categoria</li>
+                            <li class="hover:underline">Categoria</li>
+                            <li class="hover:underline">Categoria</li>
+                            <li class="hover:underline">Categoria</li>
+                            <li class="hover:underline">Categoria</li>
+                            <li class="hover:underline">Categoria</li>
+                          </ul>
+                        </div>
+                        <div class="flex-1 mt-4">
+                          <h4 class="text-blue-600 font-bold mb-2">
+                            Categoria
+                          </h4>
+                          <ul class="text-gray-600 space-y-3">
+                            <li class="hover:underline">Categoria</li>
+                            <li class="hover:underline">Categoria</li>
+                            <li class="hover:underline">Categoria</li>
+                            <li class="hover:underline">Categoria</li>
+                            <li class="hover:underline">Categoria</li>
+                            <li class="hover:underline">Categoria</li>
+                            <li class="hover:underline">Categoria</li>
+                          </ul>
+                        </div>
+
+                        <div
+                          class="flex-1 relative mt-4 ml-0 w-[236px] h-[298px]"
+                        >
+                          <img
+                            src="src/images/caneca-tabua.png"
+                            alt="Promo"
+                            class="w-full h-full object-cover rounded-[10px]"
+                          />
+
+                          <div
+                            class="absolute inset-0 bg-gray-900/40 rounded-[10px] z-10"
+                          ></div>
+
+                          <div
+                            class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-center z-20 px-3"
+                          >
+                            <h3
+                              class="text-[20px] font-normal leading-[1.2] text-left"
+                            >
+                              Confira os<br />
+                              Produtos<br />
+                              <span class="font-bold"
+                                >Que acabaram<br />De chegar</span
+                              >
+                            </h3>
+                            <button
+                              class="w-[116px] h-[38px] mt-6 text-white font-bold py-1 px-4 rounded-[10px] border border-white text-[12px] uppercase bg-transparent hover:bg-white hover:text-black transition"
+                            >
+                              Ver Todos
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li class="flex group/dep relative">
+                    <button
+                      class="w-full flex items-center justify-between text-left mt-0 px-3 rounded text-black hover:text-[#005CFF] font-medium transition"
+                    >
+                      <span>Departamento</span>
+                      <span
+                        class="text-black group-hover/dep:text-[#005CFF] transition font-medium text-[24px]"
+                        >›</span
+                      >
+                    </button>
+                    <div
+                      class="absolute inset-y-0 left-full top-0 w-[1000px] h-[329px] hidden group-hover/dep:flex justify-between pl-11 pr-1"
+                    >
+                      <div class="flex w-full -mt-[255px]">
+                        <div class="flex-1 mt-4">
+                          <h4 class="text-blue-600 font-bold mb-2">
+                            Categoria
+                          </h4>
+                          <ul class="text-gray-600 space-y-3">
+                            <li class="hover:underline">Categoria</li>
+                            <li class="hover:underline">Categoria</li>
+                            <li class="hover:underline">Categoria</li>
+                            <li class="hover:underline">Categoria</li>
+                            <li class="hover:underline">Categoria</li>
+                            <li class="hover:underline">Categoria</li>
+                            <li class="hover:underline">Categoria</li>
+                          </ul>
+                        </div>
+                        <div class="flex-1 mt-4">
+                          <h4 class="text-blue-600 font-bold mb-2">
+                            Categoria
+                          </h4>
+                          <ul class="text-gray-600 space-y-3">
+                            <li class="hover:underline">Categoria</li>
+                            <li class="hover:underline">Categoria</li>
+                            <li class="hover:underline">Categoria</li>
+                            <li class="hover:underline">Categoria</li>
+                            <li class="hover:underline">Categoria</li>
+                            <li class="hover:underline">Categoria</li>
+                            <li class="hover:underline">Categoria</li>
+                          </ul>
+                        </div>
+
+                        <div class="flex-1 mt-4">
+                          <h4 class="text-blue-600 font-bold mb-2">
+                            Categoria
+                          </h4>
+                          <ul class="text-gray-600 space-y-3">
+                            <li class="hover:underline">Categoria</li>
+                            <li class="hover:underline">Categoria</li>
+                            <li class="hover:underline">Categoria</li>
+                            <li class="hover:underline">Categoria</li>
+                            <li class="hover:underline">Categoria</li>
+                            <li class="hover:underline">Categoria</li>
+                            <li class="hover:underline">Categoria</li>
+                          </ul>
+                        </div>
+
+                        <div
+                          class="flex-1 relative mt-4 ml-0 w-[236px] h-[298px]"
+                        >
+                          <img
+                            src="src/images/caneca-tabua.png"
+                            alt="Promo"
+                            class="w-full h-full object-cover rounded-[10px]"
+                          />
+
+                          <div
+                            class="absolute inset-0 bg-gray-900/40 rounded-[10px] z-10"
+                          ></div>
+
+                          <div
+                            class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-center z-20 px-3"
+                          >
+                            <h3
+                              class="text-[20px] font-normal leading-[1.2] text-left"
+                            >
+                              Confira os<br />
+                              Produtos<br />
+                              <span class="font-bold"
+                                >Que acabaram<br />De chegar</span
+                              >
+                            </h3>
+                            <button
+                              class="w-[116px] h-[38px] mt-6 text-white font-bold py-1 px-4 rounded-[10px] border border-white text-[12px] uppercase bg-transparent hover:bg-white hover:text-black transition"
+                            >
+                              Ver Todos
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <a href="#" class="text-gray-800 hover:text-[#005CFF]"
+              >Departamento</a
+            >
+          </li>
+          <li>
+            <a href="#" class="text-gray-800 hover:text-[#005CFF]"
+              >Departamento</a
+            >
+          </li>
+          <li>
+            <a href="#" class="text-gray-800 hover:text-[#005CFF]"
+              >Departamento</a
+            >
+          </li>
+          <li>
+            <a href="#" class="text-gray-800 hover:text-[#005CFF]"
+              >Departamento</a
+            >
+          </li>
+          <li>
+            <a href="#" class="text-gray-800 hover:text-[#005CFF]"
+              >Departamento</a
+            >
+          </li>
+          <li>
+            <a href="#" class="text-gray-800 hover:text-[#005CFF]"
+              >Departamento</a
+            >
+          </li>
+          <li>
+            <a href="#" class="text-gray-800 hover:text-[#005CFF]"
+              >Departamento</a
+            >
+          </li>
+          <li>
+            <a href="#" class="text-gray-800 hover:text-[#005CFF]"
+              >Departamento</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section
+      class="flex bg-[url(src/images/bg-1.jpg)] bg-no-repeat h-[306px] lg:h-[510px] bg-[position:-200px_-200px] lg:bg-[position:310px_-270px] lg:bg-[length:30%] bg-[length:100%] bg-[#E7E7EA]"
+    >
+      <div
+        class="flex flex-col lg:flex-col w-1/2 ml-auto lg:mr-[317px] p-4 items-center justify-center"
+      >
+        <div class="lg:flex lg:flex-row">
+          <h1 class="text-[40px] lg:text-[100px] font-bold text-center">
+            SUPER
+          </h1>
+          <h2 class="text-[40px] lg:text-[100px] text-center">SALE</h2>
+        </div>
+        <h2 class="text-[#005CFF] text-[12px] lg:text-[25px]">
+          SELECTED ITEMS UP TO
+        </h2>
+        <h2 class="text-[#005CFF] text-[32px] lg:text-[60px] font-bold">
+          50%OFF
+        </h2>
+      </div>
+    </section>
+
+    <section class="px-6 py-8 mt-[56px] lg:mx-[317px]">
+      <div class="swiper mySwiper relative">
+        <div class="flex justify-between mb-4">
+          <h1
+            class="font-bold text-[16px] lg:text-[20px] leading-[100%] tracking-[0]"
+          >
+            Lançamentos
+          </h1>
+          <h1
+            class="font-bold text-[14px] leading-[20px] tracking-[0] text-center underline decoration-solid decoration-[0px] underline-offset-[0px]"
+          >
+            Ver mais
+          </h1>
+        </div>
+        <div class="swiper-wrapper">
+          <div
+            class="swiper-slide relative flex flex-col items-center text-center border-[1px] border-[#DDDDDD] rounded-[10px] p-3"
+          >
+            <span
+              class="absolute top-3 left-2 bg-[#00264E] text-white text-[10px] font-bold px-2 py-1 rounded-[4px]"
+            >
+              NOVO
+            </span>
+            <img
+              src="/src/images/produto1.png"
+              alt="Produto 1"
+              class="w-full h-auto mb-3"
+            />
+            <h3
+              class="font-medium mb-2 text-[14px] leading-[100%] tracking-[0] capitalize text-[#303030]"
+            >
+              Lorem Ipsum Dolor Sit Amet Consectetuer Adipiscing Elit
+            </h3>
+
+            <div class="flex items-center gap-2 mb-1">
+              <span class="text-gray-500 line-through text-sm">R$ 100,00</span>
+              <span
+                class="bg-[#5EC0BE] text-white text-[11px] px-2 py-0.5 rounded font-bold"
+                >10% OFF</span
+              >
+            </div>
+
+            <div class="text-[16px] font-bold mb-1 text-left">R$79,90</div>
+
+            <div class="text-xs text-gray-600 mb-3">
+              Ou em até <span class="font-bold">10x de R$ 7,90</span>
+            </div>
+
+            <button
+              class="w-full h-[40px] bg-[#005CFF] text-white text-[14px] font-bold rounded-[8px] flex items-center justify-center"
+            >
+              Comprar
+            </button>
+          </div>
+
+          <div
+            class="swiper-slide relative flex flex-col items-center text-center border-[1px] border-[#DDDDDD] rounded-[10px] p-3"
+          >
+            <span
+              class="absolute top-3 left-2 bg-[#00264E] text-white text-[10px] font-bold px-2 py-1 rounded-[4px]"
+            >
+              NOVO
+            </span>
+            <img
+              src="/src/images/produto1.png"
+              alt="Produto 1"
+              class="w-full h-auto mb-3"
+            />
+            <h3
+              class="font-medium mb-2 text-[14px] leading-[100%] tracking-[0] capitalize text-[#303030]"
+            >
+              Lorem Ipsum Dolor Sit Amet Consectetuer Adipiscing Elit
+            </h3>
+
+            <div class="flex items-center gap-2 mb-1">
+              <span class="text-gray-500 line-through text-sm">R$ 100,00</span>
+              <span
+                class="bg-[#5EC0BE] text-white text-[11px] px-2 py-0.5 rounded font-bold"
+                >10% OFF</span
+              >
+            </div>
+
+            <div class="text-[16px] font-bold mb-1 text-left">R$79,90</div>
+
+            <div class="text-xs text-gray-600 mb-3">
+              Ou em até <span class="font-bold">10x de R$ 7,90</span>
+            </div>
+
+            <button
+              class="w-full h-[40px] bg-[#005CFF] text-white text-[14px] font-bold rounded-[8px] flex items-center justify-center"
+            >
+              Comprar
+            </button>
+          </div>
+
+          <div
+            class="swiper-slide relative flex flex-col items-center text-center border-[1px] border-[#DDDDDD] rounded-[10px] p-3"
+          >
+            <span
+              class="absolute top-3 left-2 bg-[#00264E] text-white text-[10px] font-bold px-2 py-1 rounded-[4px]"
+            >
+              NOVO
+            </span>
+            <img
+              src="/src/images/produto1.png"
+              alt="Produto 1"
+              class="w-full h-auto mb-3"
+            />
+            <h3
+              class="font-medium mb-2 text-[14px] leading-[100%] tracking-[0] capitalize text-[#303030]"
+            >
+              Lorem Ipsum Dolor Sit Amet Consectetuer Adipiscing Elit
+            </h3>
+
+            <div class="flex items-center gap-2 mb-1">
+              <span class="text-gray-500 line-through text-sm">R$ 100,00</span>
+              <span
+                class="bg-[#5EC0BE] text-white text-[11px] px-2 py-0.5 rounded font-bold"
+                >10% OFF</span
+              >
+            </div>
+
+            <div class="text-[16px] font-bold mb-1 text-left">R$79,90</div>
+
+            <div class="text-xs text-gray-600 mb-3">
+              Ou em até <span class="font-bold">10x de R$ 7,90</span>
+            </div>
+
+            <button
+              class="w-full h-[40px] bg-[#005CFF] text-white text-[14px] font-bold rounded-[8px] flex items-center justify-center"
+            >
+              Comprar
+            </button>
+          </div>
+
+          <div
+            class="swiper-slide relative flex flex-col items-center text-center border-[1px] border-[#DDDDDD] rounded-[10px] p-3"
+          >
+            <span
+              class="absolute top-3 left-2 bg-[#00264E] text-white text-[10px] font-bold px-2 py-1 rounded-[4px]"
+            >
+              NOVO
+            </span>
+            <img
+              src="/src/images/produto1.png"
+              alt="Produto 1"
+              class="w-full h-auto mb-3"
+            />
+            <h3
+              class="font-medium mb-2 text-[14px] leading-[100%] tracking-[0] capitalize text-[#303030]"
+            >
+              Lorem Ipsum Dolor Sit Amet Consectetuer Adipiscing Elit
+            </h3>
+
+            <div class="flex items-center gap-2 mb-1">
+              <span class="text-gray-500 line-through text-sm">R$ 100,00</span>
+              <span
+                class="bg-[#5EC0BE] text-white text-[11px] px-2 py-0.5 rounded font-bold"
+                >10% OFF</span
+              >
+            </div>
+
+            <div class="text-[16px] font-bold mb-1 text-left">R$79,90</div>
+
+            <div class="text-xs text-gray-600 mb-3">
+              Ou em até <span class="font-bold">10x de R$ 7,90</span>
+            </div>
+
+            <button
+              class="w-full h-[40px] bg-[#005CFF] text-white text-[14px] font-bold rounded-[8px] flex items-center justify-center"
+            >
+              Comprar
+            </button>
+          </div>
+
+          <div
+            class="swiper-slide relative flex flex-col items-center text-center border-[1px] border-[#DDDDDD] rounded-[10px] p-3"
+          >
+            <span
+              class="absolute top-3 left-2 bg-[#00264E] text-white text-[10px] font-bold px-2 py-1 rounded-[4px]"
+            >
+              NOVO
+            </span>
+            <img
+              src="/src/images/produto1.png"
+              alt="Produto 1"
+              class="w-full h-auto mb-3"
+            />
+            <h3
+              class="font-medium mb-2 text-[14px] leading-[100%] tracking-[0] capitalize text-[#303030]"
+            >
+              Lorem Ipsum Dolor Sit Amet Consectetuer Adipiscing Elit
+            </h3>
+
+            <div class="flex items-center gap-2 mb-1">
+              <span class="text-gray-500 line-through text-sm">R$ 100,00</span>
+              <span
+                class="bg-[#5EC0BE] text-white text-[11px] px-2 py-0.5 rounded font-bold"
+                >10% OFF</span
+              >
+            </div>
+
+            <div class="text-[16px] font-bold mb-1 text-left">R$79,90</div>
+
+            <div class="text-xs text-gray-600 mb-3">
+              Ou em até <span class="font-bold">10x de R$ 7,90</span>
+            </div>
+
+            <button
+              class="w-full h-[40px] bg-[#005CFF] text-white text-[14px] font-bold rounded-[8px] flex items-center justify-center"
+            >
+              Comprar
+            </button>
+          </div>
+
+          <div
+            class="swiper-slide relative flex flex-col items-center text-center border-[1px] border-[#DDDDDD] rounded-[10px] p-3"
+          >
+            <span
+              class="absolute top-3 left-2 bg-[#00264E] text-white text-[10px] font-bold px-2 py-1 rounded-[4px]"
+            >
+              NOVO
+            </span>
+            <img
+              src="/src/images/produto1.png"
+              alt="Produto 1"
+              class="w-full h-auto mb-3"
+            />
+            <h3
+              class="font-medium mb-2 text-[14px] leading-[100%] tracking-[0] capitalize text-[#303030]"
+            >
+              Lorem Ipsum Dolor Sit Amet Consectetuer Adipiscing Elit
+            </h3>
+
+            <div class="flex items-center gap-2 mb-1">
+              <span class="text-gray-500 line-through text-sm">R$ 100,00</span>
+              <span
+                class="bg-[#5EC0BE] text-white text-[11px] px-2 py-0.5 rounded font-bold"
+                >10% OFF</span
+              >
+            </div>
+
+            <div class="text-[16px] font-bold mb-1 text-left">R$79,90</div>
+
+            <div class="text-xs text-gray-600 mb-3">
+              Ou em até <span class="font-bold">10x de R$ 7,90</span>
+            </div>
+
+            <button
+              class="w-full h-[40px] bg-[#005CFF] text-white text-[14px] font-bold rounded-[8px] flex items-center justify-center"
+            >
+              Comprar
+            </button>
+          </div>
+        </div>
+        <div class="swiper-pagination !static mt-3"></div>
+      </div>
+    </section>
+
+    <section class="lg:mx-[317px] lg:flex lg:flex-row lg:mt-10">
+      <img
+        src="src/images/caneca.png"
+        alt=""
+        class="lg:w-[652px] lg:h-[747px]"
+      />
+      <div class="lg:flex lg:flex-col lg:justify-center lg:max-w-[487px]">
+        <h1
+          class="font-bold text-[24px] lg:text-[30px] py-[38px] px-6 leading-[140%] tracking-[4%] uppercase"
+        >
+          LOREM IPSUM
+        </h1>
+        <h2
+          class="text-[14px] lg:text-[18px] leading-[140%] tracking-[5%] px-6"
+        >
+          Duis consectetur metus nec lacus auctor dignissim. Mauris vitae
+          finibus dui. Mauris laoreet lacus ut eleifend viverra. Cras efficitur
+          volutpat dui, in lobortis metus lacinia sit amet. Sed lacinia pharetra
+          magna, vel pulvinar ligula hendrerit a. Maecenas fringilla porttitor
+          tortor eget lacinia. Donec sollicitudin euismod orci, auctor fringilla
+          magna consequat interdum. Fusce sagittis elit a libero commodo egestas
+          efficitur id augue.
+        </h2>
+        <h2
+          class="text-[14px] lg:text-[18px] leading-[140%] tracking-[5%] px-6 mt-6"
+        >
+          Cras dignissim est et pellentesque tincidunt. Praesent bibendum quis
+          velit a aliquam. Ut vestibulum turpis eget mi iaculis ullamcorper.
+          Curabitur nec metus sed tortor sollicitudin porta nec eu enim. Ut
+          fermentum scelerisque tortor mollis volutpat. Mauris iaculis magna
+          nisl, vel porttitor augue placerat et.
+        </h2>
+      </div>
+    </section>
+
+    <section
+      class="bg-[#DEDEDE] mt-[56px] lg:flex lg:flex-row-reverse lg:justify-center lg:lg:items-center"
+    >
+      <img
+        class="px-[22px] py-[28px] lg:w-[652px] lg:h-[728px]"
+        src="src/images/caneca-tabua.png"
+        alt=""
+      />
+
+      <div
+        class="lg:flex lg:flex-col lg:items-center lg:justify-center lg:gap-[10px]"
+      >
+        <h1
+          class="font-bold text-[20px] lg:text-[30px] leading-[140%] tracking-[4%] text-center uppercase"
+        >
+          Lorem Ipsum
+        </h1>
+        <div
+          class="flex flex-row p-[20px] lg:flex lg:flex-row lg:max-w-[476px] lg:items-center lg:gap-[26px]"
+        >
+          <img
+            src="src/images/icone-azul.svg"
+            alt=""
+            class="lg:h-[90px] lg:w-[90px]"
+          />
+          <h2
+            class="text-[12px] lg:text-[18px] leading-[140%] tracking-[5%] px-[14px]"
+          >
+            Aenean massa. Cum sociis natoque penatibus et magnis dis parturient
+            montes, nascetur ridiculus mus. Donec quam felis, ultricies nec,
+            pellentesque eu, pretium quis, sem.
+          </h2>
+        </div>
+        <div
+          class="flex flex-row p-[20px] lg:flex lg:flex-row lg:max-w-[476px] lg:items-center lg:gap-[26px]"
+        >
+          <img
+            src="src/images/icone-azul.svg"
+            alt=""
+            class="lg:h-[90px] lg:w-[90px]"
+          />
+          <h2
+            class="text-[12px] lg:text-[18px] leading-[140%] tracking-[5%] px-[14px]"
+          >
+            Aenean massa. Cum sociis natoque penatibus et magnis dis parturient
+            montes, nascetur ridiculus mus. Donec quam felis, ultricies nec,
+            pellentesque eu, pretium quis, sem.
+          </h2>
+        </div>
+        <div
+          class="flex flex-row p-[20px] lg:flex lg:flex-row lg:max-w-[476px] lg:items-center lg:gap-[26px]"
+        >
+          <img
+            src="src/images/icone-azul.svg"
+            alt=""
+            class="lg:h-[90px] lg:w-[90px]"
+          />
+          <h2
+            class="text-[12px] lg:text-[18px] leading-[140%] tracking-[5%] px-[14px]"
+          >
+            Aenean massa. Cum sociis natoque penatibus et magnis dis parturient
+            montes, nascetur ridiculus mus. Donec quam felis, ultricies nec,
+            pellentesque eu, pretium quis, sem.
+          </h2>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="lg:mx-[317px] lg:flex lg:flex-row lg:mt-10 lg:items-center lg:justify-center"
+    >
+      <img
+        src="src/images/caneca.png"
+        alt=""
+        class="lg:w-[652px] lg:h-[747px]"
+      />
+      <div class="lg:flex lg:flex-col lg:justify-center lg:max-w-[487px]">
+        <h1
+          class="font-bold text-[24px] lg:text-[30px] py-[38px] px-6 leading-[140%] tracking-[4%] uppercase"
+        >
+          LOREM IPSUM
+        </h1>
+        <h2
+          class="text-[14px] lg:text-[18px] leading-[140%] tracking-[5%] px-6"
+        >
+          Duis consectetur metus nec lacus auctor dignissim. Mauris vitae
+          finibus dui. Mauris laoreet lacus ut eleifend viverra. Cras efficitur
+          volutpat dui, in lobortis metus lacinia sit amet. Sed lacinia pharetra
+          magna, vel pulvinar ligula hendrerit a. Maecenas fringilla porttitor
+          tortor eget lacinia. Donec sollicitudin euismod orci, auctor fringilla
+          magna consequat interdum. Fusce sagittis elit a libero commodo egestas
+          efficitur id augue.
+        </h2>
+        <h2
+          class="text-[14px] lg:text-[18px] leading-[140%] tracking-[5%] px-6 mt-6"
+        >
+          Cras dignissim est et pellentesque tincidunt. Praesent bibendum quis
+          velit a aliquam. Ut vestibulum turpis eget mi iaculis ullamcorper.
+          Curabitur nec metus sed tortor sollicitudin porta nec eu enim. Ut
+          fermentum scelerisque tortor mollis volutpat. Mauris iaculis magna
+          nisl, vel porttitor augue placerat et.
+        </h2>
+      </div>
+    </section>
+
+    <section class="relative mt-[56px] h-[449px] lg:h-[660px] overflow-hidden">
+      <img
+        class="block w-full scale-[1.7] lg:scale-100 object-cover object-bottom origin-center"
+        src="/src/images/banner-contato.png"
+        alt=""
+      />
+      <div
+        class="absolute top-1/2 left-0 right-0 -translate-y-1/2 bg-[#005CFF] text-white font-semibold lg:font-normal text-[16px] lg:text-[30px] leading-[140%] tracking-[0%] text-center p-4 lg:h-[132px] flex items-center justify-center"
+      >
+        Entre em contato conosco e verifique a disponibilidade para sua região!
+      </div>
+    </section>
+
+    <section class="flex justify-center lg:mt-[64px]">
+      <div class="px-[1px] w-full max-w-[1260px]">
+        <div class="text-center mb-4">
+          <h2
+            class="font-bold text-[16px] lg:text-[20px] leading-[100%] tracking-[0] text-center"
+          >
+            Cadastre-se na nossa
+            <span
+              class="text-blue-600 font-bold text-[16px] lg:text-[20px] leading-[100%] tracking-[0] text-center"
+              >newsletter</span
+            >
+          </h2>
+        </div>
+
+        <div
+          class="bg-[#DEDEDE] py-[38px] lg:py-0 px-[14px] lg:px-[40px] rounded-[8px] w-full lg:h-[176px] lg:flex lg:items-center"
+        >
+          <form
+            class="flex flex-col lg:flex-row lg:items-center lg:gap-4 w-full"
+          >
+            <div class="mb-4 lg:mb-0 lg:w-1/4">
+              <input
+                type="text"
+                placeholder="Digite seu nome"
+                class="w-full px-4 py-3 rounded-md bg-white text-[#303030] text-[14px] leading-[100%] tracking-[0]"
+              />
+            </div>
+
+            <div class="mb-4 lg:mb-0 lg:w-1/3">
+              <input
+                type="email"
+                placeholder="Digite seu e-mail"
+                class="w-full px-4 py-3 rounded-md bg-white text-[#303030] text-[14px] leading-[100%] tracking-[0]"
+              />
+            </div>
+
+            <div class="mb-6 lg:mb-0 flex items-center lg:w-1/4">
+              <input
+                type="checkbox"
+                id="privacyPolicy"
+                class="w-4 h-4 mr-2 border-gray-300 rounded"
+              />
+              <label
+                for="privacyPolicy"
+                class="font-bold text-[12px] leading-[100%] tracking-[0] text-[#656565]"
+              >
+                Estou de acordo com a
+                <span
+                  class="font-bold text-[12px] leading-[100%] tracking-[0] underline decoration-solid text-[#656565]"
+                  >Política de Privacidade</span
+                >
+              </label>
+            </div>
+
+            <div class="lg:w-[121px]">
+              <button
+                type="submit"
+                class="w-full bg-[#005CFF] text-white py-3 px-4 rounded-md font-medium"
+              >
+                Cadastrar
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer class="mt-10 bg-[#F5F5F5]">
+      <div class="max-w-6xl mx-auto px-4 pt-10 pb-8 bg-[#F5F5F5]">
+        <div
+          class="border-t-0 lg:border-t-0 border-b lg:border-b-0 border-gray-300"
+        >
+          <div class="lg:flex lg:justify-between">
+            <div class="flex flex-col items-center mb-10 lg:mt-6">
+              <img
+                src="src/images/logo-avanti.svg"
+                alt="AVANTI"
+                class="h-7 mb-8"
+              />
+
+              <div class="flex space-x-8">
+                <a href="#" class="text-blue-600 hover:opacity-80">
+                  <img src="src/images/instagram.svg" alt="Instagram" />
+                </a>
+                <a href="#" class="text-blue-800 hover:opacity-80">
+                  <img src="src/images/facebook.svg" alt="Facebook" />
+                </a>
+                <a href="#" class="text-red-600 hover:opacity-80">
+                  <img src="src/images/youtube.svg" alt="YouTube" />
+                </a>
+                <a href="#" class="text-blue-500 hover:opacity-80">
+                  <img src="src/images/tiktok.svg" alt="TikTok" />
+                </a>
+              </div>
+            </div>
+            <div
+              class="lg:w-1/4 py-4 border-b lg:border-b-0 border-gray-300 px-4"
+            >
+              <div class="flex justify-between items-center lg:block">
+                <h5 class="text-base font-bold">Institucional</h5>
+                <img src="src/images/seta-baixo.svg" alt="" class="lg:hidden" />
+              </div>
+              <div class="hidden lg:block mt-4 space-y-2">
+                <p class="text-sm">Sobre Nós</p>
+                <p class="text-sm">Nossas Lojas</p>
+                <p class="text-sm">Privacidade e Segurança</p>
+                <p class="text-sm">Termos e Condições</p>
+              </div>
+            </div>
+
+            <div
+              class="lg:w-1/4 py-4 border-b lg:border-b-0 border-gray-300 px-4"
+            >
+              <div class="flex justify-between items-center lg:block">
+                <h5 class="text-base font-bold">Central de ajuda</h5>
+                <img src="src/images/seta-baixo.svg" alt="" class="lg:hidden" />
+              </div>
+              <div class="hidden lg:block mt-4 space-y-2">
+                <p class="text-sm">Fale Conosco</p>
+                <p class="text-sm">Frete e Entrega</p>
+                <p class="text-sm">Trocas e Devoluções</p>
+                <p class="text-sm">Formas de Pagamento</p>
+                <p class="text-sm">FAQ</p>
+              </div>
+            </div>
+
+            <div class="lg:w-1/4 py-4 px-4">
+              <div class="flex justify-between items-center lg:block">
+                <h5 class="text-base font-bold">Atendimento</h5>
+                <img src="src/images/seta-baixo.svg" alt="" class="lg:hidden" />
+              </div>
+              <div class="hidden lg:block mt-4 space-y-2">
+                <p class="text-sm">Telefone: (00) 1234-5678</p>
+                <p class="text-sm">E-mail: exemplo@exemplo.com.br</p>
+                <p class="text-sm">Horário de Atendimento</p>
+                <p class="text-sm">De Segunda a Sábado: 09:00 às 21:00h</p>
+                <p class="text-sm">Domingos e Feriados: 10:00 às 21:00h</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="py-8 bg-[#F5F5F5]">
+          <div class="flex flex-wrap justify-center gap-6 mb-8">
+            <img src="src/images/amex.svg" alt="American Express" class="h-4" />
+            <img src="src/images/mastercard.svg" alt="Mastercard" class="h-4" />
+            <img src="src/images/visa.svg" alt="Visa" class="h-4" />
+            <img src="src/images/hipercard.svg" alt="Hipercard" class="h-4" />
+            <img src="src/images/elo.svg" alt="Elo" class="h-4" />
+            <img src="src/images/dinners.svg" alt="Diners Club" class="h-4" />
+            <img src="src/images/paypal.svg" alt="PayPal" class="h-4" />
+            <img src="src/images/pix.svg" alt="Pix" class="h-4" />
+            <img src="src/images/boleto.svg" alt="Boleto" class="h-4" />
+          </div>
+        </div>
+      </div>
+
+      <div class="max-w-6xl mx-auto mb-8 px-6">
+        <p class="text-sm text-center text-gray-700">
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+          nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
+          volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+          ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+          Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse
+          molestie consequat, vel illum dolore eu feugiat nulla facilisis at
+          vero eros et accumsan et iusto odio dignissim qui blandit praesent
+          luptatum zzril delenit augue duis dolore te feugait nulla facilisis.
+        </p>
+      </div>
+
+      <div class="max-w-6xl mx-auto mb-10 px-4">
+        <div class="flex flex-wrap justify-center items-center gap-6">
+          <img src="src/images/lets-encrypt.svg" alt="Let's Encrypt" />
+          <img src="src/images/vtex-certified-rodape.svg" alt="VTEX PCI" />
+          <img src="src/images/avanti-logo-rodape.svg" alt="AVANTI" />
+          <img src="src/images/vtex-logo-rodape.svg" alt="VTEX" />
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
